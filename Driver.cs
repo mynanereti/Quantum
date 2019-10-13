@@ -9,6 +9,10 @@ namespace Test
     {
         static void Main(string[] args)
         {
+            /*using (var qsim = new QuantumSimulator()) // Only for hello quantum
+            {
+                HelloQ.Run(qsim).Wait();
+            }*/
             using (var qsim = new QuantumSimulator())
             {
                 Entanglement.Run(qsim).Wait();
